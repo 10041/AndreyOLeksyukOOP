@@ -11,6 +11,12 @@ TeleProgramm::TeleProgramm()
 	cout << "конструктор телепрограммы" << endl;
 }
 
+TeleProgramm::TeleProgramm(int a)
+{
+	hour = a;
+	cout << "конструктор с параметрами телепрограммы" << endl;
+}
+
 TeleProgramm::~TeleProgramm()
 {
 	cout << "деструктор телепрограммы" << endl;
@@ -68,8 +74,11 @@ void Film::getFilm_name()
 	cout << "название фильма: " << Film_name << endl;
 }
 
+
+
 News::News()
 {
+	TeleProgramm();
 	News_name = NULL;
 	cout << "конструктор новостей" << endl;
 }

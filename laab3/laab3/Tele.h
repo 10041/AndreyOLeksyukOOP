@@ -1,8 +1,14 @@
 #pragma once
+#include <iostream>
 class TeleProgramm {
 	int hour;
+private:
+	class newsclass {
+		int key;
+	};
 public:
 	TeleProgramm();
+	TeleProgramm(int a);
 	void setHour(int hour);
 	void getHour();
 	~TeleProgramm();
@@ -47,6 +53,7 @@ class News : public TeleProgramm {
 	char* News_name;
 public:
 	News();
+	News(int x) :TeleProgramm(x) { News_name = NULL; std::cout << "конструктор с параметром из базового класса" << std::endl; }
 	void setNews_name(char *name);
 	void getNews_name();
 	~News();

@@ -27,3 +27,11 @@
 *.exe
 *.out
 *.app
+*.sin
+*.filters
+*.vcxproj
+*.pdb
+*.idb
+*.tlog
+*.lastbuildstate
+*.db
